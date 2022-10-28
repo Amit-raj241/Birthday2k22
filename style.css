@@ -1,0 +1,62 @@
+* {
+  transition: 0.3s;
+}
+
+#intro {
+  background-image: url("./assets/sam_bg3.jpeg");
+  height: 100vh;
+  transition: 0.3s;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #intro {
+    background-image: url("./assets/sam_bg4.jpeg");
+  }
+}
+
+@media (max-width: 576px) {
+  #intro {
+    background-image: url("./assets/bg.jpg");
+  }
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.msg {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+header {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease-in-out 0s 1 slideInFromLeft;
+}
+
+
+#demo {
+  color: rgb(192, 43, 43);
+}
+
